@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <InternalsVisibleTo>CsGoEmpire.Api.Tests</InternalsVisibleTo>
+    </PropertyGroup>
+
+    <!-- NuGet Package Metadata -->
+    <PropertyGroup>
+        <PackageId>CsGoEmpire.Api</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>CsGoEmpire.Api Contributors</Authors>
+        <Description>A professional .NET client library for the CSGOEmpire API. Supports all 29 REST endpoints and WebSocket events with rate limiting, dependency injection, and strongly-typed models.</Description>
+        <PackageTags>csgoempire;csgo;cs2;api;trading;skins;websocket</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/csgoempire/CsGoEmpire.Api</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageProjectUrl>https://github.com/csgoempire/CsGoEmpire.Api</PackageProjectUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0-preview.1.25080.5" />
+        <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.0-preview.1.25080.5" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0-preview.1.25080.5" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.0-preview.1.25080.5" />
+        <PackageReference Include="SocketIOClient" Version="3.1.2" />
+    </ItemGroup>
+
+</Project>
