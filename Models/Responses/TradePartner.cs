@@ -47,5 +47,5 @@ public sealed class TradePartner
     /// The trade partner's Steam community level.
     /// </summary>
     [JsonPropertyName("steam_level")]
-    public int SteamLevel { get; set; }
+    public int? SteamLevel { get; set; }
 }

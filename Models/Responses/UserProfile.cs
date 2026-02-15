@@ -48,7 +48,7 @@ public sealed class UserProfile
     /// The user's Steam community level.
     /// </summary>
     [JsonPropertyName("steam_level")]
-    public int SteamLevel { get; set; }
+    public int? SteamLevel { get; set; }
 
     /// <summary>
     /// Whether the user account is verified.
