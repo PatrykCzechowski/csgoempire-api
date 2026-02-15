@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using CsGoEmpire.Api.Converters;
 
 namespace CsGoEmpire.Api.Models.Responses;
 
@@ -155,6 +156,7 @@ public sealed class UserProfile
     /// Whether the user is whitelisted.
     /// </summary>
     [JsonPropertyName("whitelisted")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool Whitelisted { get; set; }
 
     /// <summary>
