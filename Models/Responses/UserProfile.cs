@@ -54,12 +54,14 @@ public sealed class UserProfile
     /// Whether the user account is verified.
     /// </summary>
     [JsonPropertyName("verified")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool Verified { get; set; }
 
     /// <summary>
     /// Whether to hide the verified icon.
     /// </summary>
     [JsonPropertyName("hide_verified_icon")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool HideVerifiedIcon { get; set; }
 
     /// <summary>
@@ -169,36 +171,42 @@ public sealed class UserProfile
     /// Whether the user has deposited before.
     /// </summary>
     [JsonPropertyName("deposited")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool Deposited { get; set; }
 
     /// <summary>
     /// Whether the user is a moderator.
     /// </summary>
     [JsonPropertyName("mod")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool Mod { get; set; }
 
     /// <summary>
     /// Whether the user is a super moderator.
     /// </summary>
     [JsonPropertyName("super_mod")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool SuperMod { get; set; }
 
     /// <summary>
     /// Whether the user is an admin.
     /// </summary>
     [JsonPropertyName("admin")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool Admin { get; set; }
 
     /// <summary>
     /// Whether the user is a helper mod.
     /// </summary>
     [JsonPropertyName("helper_mod")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool HelperMod { get; set; }
 
     /// <summary>
     /// Whether the user is in QA role.
     /// </summary>
     [JsonPropertyName("qa")]
+    [JsonConverter(typeof(BoolFromNumberConverter))]
     public bool Qa { get; set; }
 
     /// <summary>
